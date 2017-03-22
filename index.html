@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>leaflet-map-simple</title>
+  <title>leaflet-map-State-Capitols</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -21,7 +21,7 @@
 <body>
 
   <!-- Display the map and title with HTML division tags  -->
-  <div id="map-title">U.S. State Capitol Buildings</div>
+  <div id="map-title">Location of U.S. State Capitol Buildings</div>
   <div id="map"></div>
 
   <!-- Create the map content with JavaScript (.js) -->
@@ -29,7 +29,7 @@
 
   /* Set up the map with initial center and zoom level */
   var map = L.map('map', {
-    center: [41.77, -72.69], // EDIT latitude, longitude to re-center map
+    center: [38.889803, -77.009114], // EDIT latitude, longitude to re-center map
     zoom: 8,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
     scrollWheelZoom: false
   });
@@ -53,7 +53,7 @@
   controlLayers.addBaseLayer(terrain, 'Stamen Terrain basemap');
 
   /* Display a blue point marker with pop-up text */
-  // L.marker([41.77, -72.69]).addTo(map) // EDIT latitude, longitude to re-position marker
+  // L.marker([38.889803, -77.009114]).addTo(map) // EDIT latitude, longitude to re-position marker
   // .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
 
   /* Upload Latitude/Longitude markers from data.csv file, show Title in pop-up, and override initial center and zoom to fit all in map */
